@@ -10,6 +10,10 @@
   line-height: 1.4;
   color: var(--color-page);
   background-color: var(--bg-page);
+
+  transition: 
+    color .3s,
+    background-color .3s;
 }
 
 .page--theme--dark {
@@ -36,6 +40,10 @@
 
   display: grid;
   grid-template-columns: 1fr 60px;
+
+  transition: 
+    color .3s,
+    background-color .3s;
 }
 
 .theme-switcher {
@@ -47,13 +55,14 @@
 .theme-switcher::after {
   content: '';
   display: block;
-  background-color: var(--bg-header);
   width: 50%;
   border-radius: 50%;
   padding-bottom: 50%;
-  /* Від ширини батьківського елемента pb:50 */
+  background-color: var(--bg-header);
+
+  transition: transform .3s;
 }
 
-.page--theme--dark .theme-switcher::after {
-
+.theme-switcher--theme--dark::after {
+  transform: translateX(100%);
 }
