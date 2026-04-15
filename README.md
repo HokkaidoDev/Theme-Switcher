@@ -110,5 +110,5 @@ MIT License - feel free to use this code!
 
 ---
 
-**Author:** HokkaidoDev 
+**Author:** HokkaidoDev </br> 
 **Purpose:** Educational project for HTML/CSS/JavaScript course

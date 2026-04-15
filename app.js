@@ -4,8 +4,6 @@ const page = document.querySelector('.page');
 const switcher = document.querySelector('.theme-switcher');
 const themeName = document.querySelector('.theme-name');
 
-console.log(switcher);
-
 switcher.addEventListener('click', () => {
   if (page.classList.contains('page--theme--dark')) {
     page.classList.remove('page--theme--dark');
